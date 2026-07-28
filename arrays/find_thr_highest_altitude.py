@@ -1,11 +1,10 @@
-gain = [-5,1,5,0,-7]
+def largestAltitude(gain):
+    max_altitude = 0
+    current_altitude = 0
 
-max_altitude = 0
-current_altitude = 0
+    for i in gain:
+        current_altitude += i
+        if current_altitude >= max_altitude:
+            max_altitude = current_altitude
 
-for i in gain:
-    current_altitude += i
-    if current_altitude >= max_altitude:
-        max_altitude = current_altitude
-
-return max_altitude
+    return max_altitude
