@@ -1,5 +1,5 @@
-def left_right_difference(nums)
-    total = sum[nums]
+def left_right_difference(nums):
+    total = sum(nums)
     left_sum = 0
     answer = []
     for num in nums:
