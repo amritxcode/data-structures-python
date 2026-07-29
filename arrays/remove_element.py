@@ -5,4 +5,5 @@ def remove_element(nums, val):
            nums[k] = nums[i] 
            k+= 1
     return k
+
 print(remove_element([3,2,2,3],3))
