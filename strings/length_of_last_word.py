@@ -3,4 +3,4 @@ def lengthOfLastWord(s):
     
     return len(lst[-1])
 
-print(lengthOfLastWord(" luffy is still joyboy"))
+# print(lengthOfLastWord(" luffy is still joyboy"))
