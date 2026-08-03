@@ -1,5 +1,5 @@
 class Solution():
-    def power(self, x:int)-> bool:
-        return x > 0 and (x & (x -1) == 0)
+    def power(self, n:int)-> bool:
+        return n > 0 and (n & (n -1) == 0)
 
 print(Solution().power(16))
