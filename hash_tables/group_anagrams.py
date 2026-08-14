@@ -1,11 +1,13 @@
-def groupAnagrams(strs):
-    map = {}
-    for i in strs:
-        sort = "".join(sorted(i))
-        if sort not in map:
-            map[sort] = [i]
+class Solution():
+    def group_anagram(self, strs: list[str])->list[list[str]]:
+        groups = {}
+        for word in strs:
+            key = "".join(sorted(word))
+            if key not in groups:
+                groups[key] = []
+            groups[key].append(word)
 
-        elif sort in map:
-            map[sort].append(i)
-        
-    return(sorted(map.values(), key= len))
+        return list(groups.values())
+
+strs = input().split()
+print(Solution().group_anagram(strs))
