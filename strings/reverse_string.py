@@ -1,6 +1,6 @@
 class Solution(object):
     def reverseString(self, s):
         s[:] = s[::-1]
-
-s = list(map(input().split()))
+        return s
+s = list(input().split())
 print(Solution().reverseString(s))
