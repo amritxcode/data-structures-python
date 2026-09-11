@@ -1,5 +1,7 @@
 class Solution:
     def maxProfit(self, prices: list[int]) -> int:
+        if not prices:
+            return 0
         best = 0
         cheapest = prices[0]
         for price in prices:
